@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<title>Validating User Input</title>
+	
+	<meta name="description" content="This site wil validate your username and password.">
+
+	<link rel="stylesheet" type="text/css" href="cssValFolders.css">
+
+	<style>
+		#loggedIn { display: flex; flex-direction: column; align-items: center; }	
+		#justText { font-size: 2rem; color: white; margin: 2rem 0;}
+		#listUsersButton { width: 12rem; height: 3rem; font-size: 1.4rem; font-weight: bold; letter-spacing: 0.2rem;
+				background-color: coral; border-radius: 1.5rem; border: none; }
+		ul { list-style-type: none; display: flex; flex-wrap: wrap; }
+		li { font-size: 1.2rem; margin: 1rem 1.4rem 0 1.4rem; flex: 0 0 auto;}
+
+	</style>
+
+</head>
+<body>
+	<div id="placement">
+		<div id="loginFolder" class="mainBodies">
+			<div id="loggedIn">
+				<div id="justText">Just came from the Login/Register Page</div>
+				<div id="buttonForUsers">
+					<input type="submit" id="listUsersButton" value="Get Users">		
+				</div>
+				<div id="theList">
+					<ul id="eachUser"></ul>
+				</div>
+			</div>
+			<div id="tabLeft" class="allTabs">
+				<div id="tabText">Your In</div>
+				<div id="radiusLeft" class="theRadius"></div>
+				<div id="coverRadiusLeft" class="theRadius"></div>
+			</div>
+		</div>
+	</div>
+
+	<script src="dBaseValidate.js"></script>
+	<script src="javascriptUsers.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+#placement {
+	margin: 5vw;
+	width: auto;
+	height: 50rem;
+	background-color: coral;
+	position: relative;
+}
+
+.mainBodies {
+	position: absolute;
+	width: auto;
+	height: 73%;
+	top: 8rem;
+	left: 10%;
+	right: 10%;
+}
+
+#registerFolder {
+	background-color: #5a86d5;
+}
+
+#loginFolder {
+	background-color: #739fee;
+}
+
+.allTabs {
+	position: absolute;
+	width: 12rem;
+	height: 3rem;
+	border-radius: 1rem 1rem 0 0;
+	text-align: center;
+	font-size: 1.4rem;
+	color: white;
+}
+
+#tabRight {
+	background-color: #5a86d5;
+	top: -3rem;
+	right: 0%;
+}
+
+#tabLeft {
+	background-color: #739fee;
+	top: -3rem;	
+	left: 0%;
+}
+
+.theRadius {
+	position: absolute;
+	width: 2rem;
+	height: 3rem;
+	top: 0%;	
+}
+
+#radiusRight {
+	background-color: #5a86d5;
+	left: -2rem;
+}
+
+#coverRadiusRight {
+	background-color: coral;
+	left: -2rem;
+	border-radius: 0 0 1rem 0;	
+}
+
+#radiusLeft {
+	background-color: #739fee;
+	right: -2rem;	
+}
+
+#coverRadiusLeft {
+	background-color: coral;
+	right: -2rem;	
+	border-radius: 0 0 0 1rem;	
+}
+
+.tabText {
+	padding-top: 0.8rem;
+}
+
+@media screen and (max-width: 700px) {
+	#placement {
+		height: 70rem;
+	}
+
+	.allTabs {
+		width: 9rem;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.allTabs {
+		width: 6rem;
+	}
+}

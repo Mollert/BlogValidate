@@ -1,0 +1,151 @@
+
+#registerInputs {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.registerInputsRow {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#introRegister {
+	margin: 3rem 0 1rem 0;
+	font-size: 2rem;
+	color: white;
+	text-align: center;
+}
+
+.registerEntry {
+	margin: 0.2rem 0;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.registerInputEntry {
+	width: 14rem;
+	height: 2rem;
+	border-radius: 0.4rem;
+	font-size: 1.2rem;	
+}
+
+#firstRegister,
+#userRegister {
+	margin-right: 3rem;
+}
+
+#lastRegister,
+#passwordRegister {
+	margin-left: 3rem;
+}
+
+.rules {
+	font-size: 0.9rem;
+}
+
+.registerErrors {
+	font-size: 0.9rem;
+	color: red;
+	visibility: hidden;
+}
+
+#buttonRegister {
+	margin: 2rem 0;
+}
+
+#registerButton {
+	width: 22rem;
+	height: 3rem;
+	font-size: 1.4rem;
+	font-weight: bold;
+	letter-spacing: 0.2rem;
+	white-space: pre;
+	background-color: coral;
+	border-radius: 1.5rem;
+	border: none;
+}
+
+
+
+
+
+
+
+#loginInputs {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#introLogin {
+	margin: 3rem 0;
+	font-size: 2rem;
+	color: white;
+	text-align: center;
+}
+
+.loginEntry {
+	margin: 1rem 0;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.loginInputEntry {
+	width: 18rem;
+	height: 2rem;
+	border-radius: 0.4rem;
+	font-size: 1.2rem;	
+}
+
+.loginErrors {
+	font-size: 0.9rem;
+	color: red;
+	visibility: hidden;
+}
+
+#buttonLogin {
+	margin: 2rem 0;
+}
+
+#loginButton {
+	width: 20rem;
+	height: 3rem;
+	font-size: 1.4rem;
+	font-weight: bold;
+	letter-spacing: 0.2rem;
+	white-space: pre;
+	background-color: coral;
+	border-radius: 1.5rem;
+	border: none;
+}
+
+@media screen and (max-width: 770px) {
+	#firstRegister,
+	#userRegister {
+		margin-right: 0;
+	}
+
+	#lastRegister,
+	#passwordRegister {
+		margin-left: 0;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#registerButton {
+		width: 13.6rem;
+		font-size: 0.8rem;
+	}
+
+	.loginInputEntry {
+		width: 12rem;
+	}
+
+	#loginButton {
+		width: 12rem;
+		font-size: 1.0rem;
+	}
+}

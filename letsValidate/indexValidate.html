@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<title>Validating User Input</title>
+	
+	<meta name="description" content="This site wil validate your username and password.">
+
+	<link rel="stylesheet" type="text/css" href="cssValFolders.css">
+	<link rel="stylesheet" type="text/css" href="cssValInputs.css">
+
+</head>
+<body>
+	<div id="placement">
+		<div id="registerFolder" class="mainBodies">
+			<form id="registerInputs" target="_blank" action="./indexFromLoginRegister.html" method="POST">
+				<div id="introRegister">Create your own account below.</div>
+				<div class="registerInputsRow">
+					<div id="firstRegister" class="registerEntry">
+						<label for="firstNameBox">First Name</label><br />
+						<input type="text" id="firstNameBox" class="registerInputEntry" autocomplete="off" name="firstname"><br />
+						<label for="firstNameBox" id="firstNameError" class="registerErrors">Check your entry.</label>
+					</div>
+					<div id="lastRegister" class="registerEntry">
+						<label for="lastNameBox">Last Name</label><br />
+						<input type="text" id="lastNameBox" class="registerInputEntry" autocomplete="off" name="lastname"><br />
+						<label for="lastNameBox" id="lastNameError" class="registerErrors">Check your entry.</label>
+					</div>
+				</div>
+				<div id="emailRegister" class="registerEntry">
+					<label for="emailBox">Email Address</label><br />
+					<input type="text" id="emailBox" class="registerInputEntry" autocomplete="off" name="email"><br />
+					<label for="emailBox" id="emailError" class="registerErrors">Check your email entry.</label>
+				</div>			
+				<div class="registerInputsRow">
+					<div id="userRegister" class="registerEntry">
+						<label for="createUsernameBox">Create Username</label><br />
+						<input type="text" id="createUsernameBox" class="registerInputEntry" autocomplete="off" name="username"><br />
+						<label for="createUsernameBox" id="createUsernameError" class="registerErrors">Check your entry.</label>
+					</div>
+					<div id="passwordRegister" class="registerEntry">
+						<label for="createPasswordBox">Create Password</label><br />
+						<input type="text" id="createPasswordBox" class="registerInputEntry" autocomplete="off" name="password"><br />
+						<label for="createPasswordBox" id="minChar" class="rules">Minimum six characters</label><br />
+						<label for="createPasswordBox" id="ulCase" class="rules">One upper and lower case letter</label><br />
+						<label for="createPasswordBox" id="oneNum" class="rules">Include at least one number</label><br />
+						<label for="createPasswordBox" id="specChar1" class="rules">And at least one special character</label><br />
+						<label for="createPasswordBox" id="specChar2" class="rules">(~!@#$%^&*)</label><br />
+						<label for="createPasswordBox" id="createPasswordError" class="registerErrors">Check your entry.</label>
+					</div>
+				</div>
+				<div id="buttonRegister">
+					<input type="submit" id="registerButton" value="<<  Create Account  >>">		
+				</div>
+			</form>
+			<div id="tabRight" class="allTabs">
+				<div class="tabText">Register</div>
+				<div id="radiusRight" class="theRadius"></div>
+				<div id="coverRadiusRight" class="theRadius"></div>
+			</div>
+		</div>
+		<div id="loginFolder" class="mainBodies">
+			<form id="loginInputs" target="_blank" action="./indexFromLoginRegister.html" method="POST">
+				<div id="introLogin">Come join the fun!</div>
+				<div id="userLogin" class="loginEntry">
+					<label for="usernameBox">Username:</label><br />
+					<input type="text" id="usernameBox" class="loginInputEntry" autocomplete="off" name="username"><br />
+					<label for="usernameBox" id="usernameError" class="loginErrors">Check your entry.</label>
+				</div>
+				<div id="passwordLogin" class="loginEntry">
+					<label for="passwordBox">Password:</label><br />
+					<input type="text" id="passwordBox" class="loginInputEntry" autocomplete="off" name="password"><br />
+					<label for="usernameBox" id="passwordError" class="loginErrors">Check your entry.</label>					
+				</div>
+				<div id="buttonLogin">
+					<input type="submit" id="loginButton" value=">>  Let's Go!  <<">		
+				</div>
+				<a class="loginEntry" href="./indexForgotEmail.html" target="_blank">Forgot password? - click here</a>
+			</form>
+			<div id="tabLeft" class="allTabs">
+				<div class="tabText">Login</div>
+				<div id="radiusLeft" class="theRadius"></div>
+				<div id="coverRadiusLeft" class="theRadius"></div>
+			</div>
+		</div>
+	</div>
+
+	<script src="dBaseValidate.js"></script>
+	<script src="javascriptValidate.js"></script>
+
+</body>
+</html>
